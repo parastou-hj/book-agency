@@ -396,3 +396,82 @@ $(document).ready(function() {
         $('.tab-pane.active .owl-carousel').owlCarousel(owlOptions);
 
     });
+
+
+     $(document).ready(function(){
+            var articlesCarousel = $('.most-owl').owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+            
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+        //          animateOut: 'fadeOut',
+        // animateIn: 'fadeIn',
+               
+                responsive: {
+                    0: {
+                        items: 1,
+                        
+                    },
+                     1200: {
+                        items: 6,
+                        
+                    },
+                    
+                  
+                }
+            });
+            
+            
+            $('.baner-right').click(function() {
+                articlesCarousel.trigger('prev.owl.carousel');
+            });
+            
+            $('.baner-nav-left').click(function() {
+                articlesCarousel.trigger('next.owl.carousel');
+            });
+        });
+    
+      $(document).ready(function(){
+            var articlesCarousel = $('.owl-editors').owlCarousel({
+                rtl: true,
+                // loop: true,
+                // margin: 5,
+                nav: false,
+                dots: false,
+            
+                // autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+        //          animateOut: 'fadeOut',
+        // animateIn: 'fadeIn',
+               
+                responsive: {
+                    0: {
+                        items: 1,
+                        
+                    },
+                     1200: {
+                        items: 8.5,
+                        
+                    },
+                    
+                  
+                }
+            });
+            
+            
+            $('.baner-right').click(function() {
+                articlesCarousel.trigger('prev.owl.carousel');
+            });
+            
+            $('.baner-nav-left').click(function() {
+                articlesCarousel.trigger('next.owl.carousel');
+            });
+        });

@@ -1930,8 +1930,12 @@ box-shadow: 0px 0px 20px 2px #5555558f;
     height: 100%;
     object-fit: scale-down;
 }
-.off-price{
+.sale-owl .off-price{
     color: #252949 ;
+    text-decoration: line-through;
+}
+.off-price{
+    color: #7f7f80 ;
     text-decoration: line-through;
 }
 .sale-owl .percent{
@@ -2056,9 +2060,20 @@ color: #616161;
         
 
 .product-item{
-    border: 1px solid #333;
+    border: 1px solid hsl(0, 3%, 85%);
       padding: 8px;
     border-radius: 15px;
+}
+.product-item .percent{
+    background-color: var(--primary-color);
+    padding: 2px 5px;
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: .9em;
+    color: #fff;
+}
+.off-percent{
+    min-height: 20px;
 }
 .tab-see-all{
        background-color: hsl(196.36deg 73.33% 94.12%);
@@ -2071,3 +2086,104 @@ color: #616161;
 
 }
 
+.tab-see-all img{
+    border: 2px solid var(--primary-color);
+    padding: 7px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.tab-see-all span{
+    font-size: 1.1em;
+}
+
+.line{
+ flex-grow: 1;
+}
+.title-line{
+    width: 100%;
+    height: 3px;
+    background-color: var(--third-color);
+   
+}
+.title-sec h6{
+      font-family: arabic;
+      color: var(--primary-color);
+      font-size: 1.4em;
+}
+
+
+
+
+.books{
+    margin: 100px 0px 80px 0px;
+}
+.book-item{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.book-item span{
+    margin-top: 60px;
+    text-align: center;
+    font-family: arabic;
+}
+.book-item img:first-child{
+
+  
+}
+.book-img{
+    position: absolute;
+    bottom: -50px;
+    right: 5%;
+
+}
+.b-shadow{
+    position: absolute;
+    bottom: -60px;
+    right: 9%;
+}
+.editor-list .row{
+    background-color:  hsl(196.36deg 73.33% 94.12%);
+    border-radius: 25px;
+    padding: 20px 20px 10px 0px !important;
+}
+.editor-item{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+}
+.editor-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.ed-img{
+    height: 75px;
+}
+.editor-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ed-list-owl{
+    padding-right: 50px;
+}
+.editor-list .col-2 span{
+    font-size: 1.3em;
+    font-family: IRANYekanWebMedium;
+
+}
+.baner-grid{
+    display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 30px;
+}
+.baner-grid > div a{
+    display: flex;
+    justify-content: center;
+}

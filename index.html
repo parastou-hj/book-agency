@@ -18,7 +18,7 @@
         </div>
         <div class="container-fluid header-container p-0">
             <div class="row header-back">
-                 <div class="row col-xl-10 header-top pt-lg-3 px-lg-2 py-2" >
+                 <div class="row col-xl-11 header-top pt-lg-3 px-lg-2 py-2" >
               
                 <div class="col-lg-9  col-8  brand-logo">
                      <div class=" bar-menu justify-content-center align-items-center d-lg-none">
@@ -33,7 +33,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3  col-4 user-cart d-flex align-items-center">
-                     <div class="cart me-2">
+                     <div class="cart-btn">
+                        <div class="cart ">
                         <img src="./images/cart.png" alt="" class="cart-img">
                         <div class="cart-badge">
                             <span>0</span>
@@ -109,10 +110,15 @@
                             </div>
     
                     </div>
+                     </div>
                     <div class="user">
                         <div class="user-btn">
-                             <img src="./images/user.png" alt="">
-                          <a href="#"><span class="d-none d-lg-block">ورود | ثبت نام</span></a>
+            
+                          <a href="#">
+                            <span class="d-none d-lg-block login ps-3">ورود</span>
+                            
+                            <span class="d-none d-lg-block pe-3">ثبت نام</span>
+                        </a>
                          
                         </div>
                           <div class="user-submenu">
@@ -182,9 +188,9 @@
             </div>
             </div>
              <div class=" header-down container-fluid pb-2 p-lg-0">
-                <div class="row col-xl-10 d-flex">
+                <div class="row col-xl-11 d-flex">
                     <!-- mobile-search -->
-                     <div class="col-lg-10 px-0">
+                     <div class="col-lg-10 px-lg-0">
                          <div class="search-input res-search d-lg-none">
                         <input type="text" placeholder="جستجو برای محصولات ...">
                         <img src="./images/search.png" alt="">
@@ -195,24 +201,25 @@
                     <ul class="category p-0">
                         <li id="categoryBtn">
                             <img src="./images/category.png" alt="">
-                            <span class="fw-bold">دسته بندی ها</span>
-                            <img src="./images/category-drop.png" alt="" class="me-auto">
-                               
-                            
+                            <span class="fw-bold"> دسته بندی کتاب ها</span>
+                           
+   
                         </li>
                     </ul>
-                    <ul class="nav pe-lg-3">
+                    <ul class="nav ">
+                         <li class="ms-2 d-flex align-items-center">
+                            <span href="" class="cat-line">|</span></li>
                         <li>
-                            <a href="">صفحه اصلی</a>
+                            <a href="">شگفت انگیزها </a>
+                        </li>
+                          <li>
+                            <a href="">پرفروش ترین ها</a>
+                        </li>
+                          <li>
+                            <a href="">جدیدترین ها</a>
                         </li>
                           <li>
                             <a href="">مقالات</a>
-                        </li>
-                          <li>
-                            <a href="">پروژه ها</a>
-                        </li>
-                          <li>
-                            <a href="">تماس با ما</a>
                         </li>
                           <li class="has-submenu">
                             <a href="">درباره ما</a>
@@ -228,11 +235,9 @@
                             </div>
                         </li>
                         <li>
-                            <a href="">پرداخت آسان</a>
+                            <a href="">تماس با ما</a>
                         </li>
-                        <li>
-                            <a href="">سفارش آسان</a>
-                        </li>
+                       
                     </ul>
                     <div class="megamenu-dropdown" id="megamenuDropdown">
            
@@ -545,7 +550,15 @@
             <div class="baner-item">
                  <img src="./images/baner.png" alt="">
             <div class="baner-btn">
-                <a href="">
+                <a href="" class="text-white">
+                    مشاهده و خرید
+                </a>
+            </div>
+            </div>
+             <div class="baner-item">
+                 <img src="./images/baner.png" alt="">
+            <div class="baner-btn">
+                <a href="" class="text-white">
                     مشاهده و خرید
                 </a>
             </div>
@@ -658,7 +671,7 @@
         </section>
         <section class="off-sec container-fluid">
             <div class="row col-xl-11">
-                <div class="col-12 off-header d-flex justify-content-between px-0 align-items-center">
+                <div class="col-12 off-header d-flex justify-content-between px-lg-0 align-items-center">
                     <div class="sale-title">تخفیفات ویژه</div>
                     <div class="timer-sec">
                         <span>زمان باقی مانده</span>
@@ -774,8 +787,8 @@
 
             </div>
         </section>
-        <section class="container-fluid gallery-tabs px-0 mt-5">
-        <div class="row col-xl-11 px-0">
+        <section class="container-fluid gallery-tabs px-lg-0 mt-5">
+        <div class="row col-xl-11 px-lg-0">
             <div class="tabs-nav my-2">
         <button class="tab-link active" data-tab="tab-1">کتاب های دانشگاهی</button>
         <button class="tab-link" data-tab="tab-2"> کتاب های کمک درسی</button>
@@ -785,8 +798,8 @@
  <div class="row px-0">
     <div class="tabs-content px-0 mb-2">
         <div id="tab-1" class="tab-pane active container-fluid px-0">
-             <div class="row px-0">
-                <div class="col-11 pe-0">
+             <div class="row px-0 ">
+                <div class="col-lg-11 pe-0">
                      <div class="owl-carousel owl-theme ">
                <div class="p-1">
                             <div class="product-item">
@@ -901,10 +914,10 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
-                   <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
+                <div class="col-lg-1  px-0 mt-2 mt-lg-0">
+                   <a href="" class="tab-see-all d-flex flex-lg-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
-                    <span href="" class="mt-3">مشاهده همه</span>
+                    <span href="" class="mt-lg-3 me-2 me-lg-0">مشاهده همه</span>
                     </a>
                 </div>
             </div>
@@ -912,9 +925,9 @@
            
         </div>
 
-        <div id="tab-2" class="tab-pane container-fluid px-0">
-            <div class="row px-0">
-                   <div class="col-11 pe-0">
+        <div id="tab-2" class="tab-pane container-fluid px-lg-0">
+           <div class="row px-0 ">
+                <div class="col-lg-11 pe-0">
                      <div class="owl-carousel owl-theme ">
                <div class="p-1">
                             <div class="product-item">
@@ -926,6 +939,7 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
+                                            <!-- please insert the off condition after off-percent -->
                                             <span class="off-price ms-2">660,000</span>
                                             <span class="percent me-1">%30</span>
                                         </div>
@@ -948,8 +962,8 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
-                                            <span class="off-price ms-2">660,000</span>
-                                            <span class="percent me-1">%30</span>
+                                            <!-- <span class="off-price ms-2">660,000</span> -->
+                                            <!-- <span class="percent me-1">%30</span> -->
                                         </div>
                                         <div class="price mt-2">
                                             <span class="price-num">841,000</span>
@@ -1028,19 +1042,18 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
-                   <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
+                <div class="col-lg-1  px-0 mt-2 mt-lg-0">
+                   <a href="" class="tab-see-all d-flex flex-lg-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
-                    <span href="" class="mt-3">مشاهده همه</span>
+                    <span href="" class="mt-lg-3 me-2 me-lg-0">مشاهده همه</span>
                     </a>
-                   
                 </div>
             </div>
         </div>
 
-        <div id="tab-3" class="tab-pane container-fluid px-0">
-             <div class="row px-0">
-               <div class="col-11 pe-0">
+        <div id="tab-3" class="tab-pane container-fluid px-lg-0">
+              <div class="row px-0 ">
+                <div class="col-lg-11 pe-0">
                      <div class="owl-carousel owl-theme ">
                <div class="p-1">
                             <div class="product-item">
@@ -1052,6 +1065,7 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
+                                            <!-- please insert the off condition after off-percent -->
                                             <span class="off-price ms-2">660,000</span>
                                             <span class="percent me-1">%30</span>
                                         </div>
@@ -1074,8 +1088,8 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
-                                            <span class="off-price ms-2">660,000</span>
-                                            <span class="percent me-1">%30</span>
+                                            <!-- <span class="off-price ms-2">660,000</span> -->
+                                            <!-- <span class="percent me-1">%30</span> -->
                                         </div>
                                         <div class="price mt-2">
                                             <span class="price-num">841,000</span>
@@ -1154,18 +1168,18 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
-                     <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
+                <div class="col-lg-1  px-0 mt-2 mt-lg-0">
+                   <a href="" class="tab-see-all d-flex flex-lg-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
-                    <span href="" class="mt-3">مشاهده همه</span>
+                    <span href="" class="mt-lg-3 me-2 me-lg-0">مشاهده همه</span>
                     </a>
                 </div>
             </div>
         </div>
         
-        <div id="tab-4" class="tab-pane container-fluid px-0">
-            <div class="row px-0">
-             <div class="col-11 pe-0">
+        <div id="tab-4" class="tab-pane container-fluid px-lg-0">
+             <div class="row px-0 ">
+                <div class="col-lg-11 pe-0">
                      <div class="owl-carousel owl-theme ">
                <div class="p-1">
                             <div class="product-item">
@@ -1177,6 +1191,7 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
+                                            <!-- please insert the off condition after off-percent -->
                                             <span class="off-price ms-2">660,000</span>
                                             <span class="percent me-1">%30</span>
                                         </div>
@@ -1199,8 +1214,8 @@
                                     <h1>کتاب جامع تیزهوشان نهم سری IQ</h1>
                                     <div class="product-item-price d-flex flex-column align-items-end">
                                         <div class="off-percent">
-                                            <span class="off-price ms-2">660,000</span>
-                                            <span class="percent me-1">%30</span>
+                                            <!-- <span class="off-price ms-2">660,000</span> -->
+                                            <!-- <span class="percent me-1">%30</span> -->
                                         </div>
                                         <div class="price mt-2">
                                             <span class="price-num">841,000</span>
@@ -1279,10 +1294,10 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
-                   <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
+                <div class="col-lg-1  px-0 mt-2 mt-lg-0">
+                   <a href="" class="tab-see-all d-flex flex-lg-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
-                    <span href="" class="mt-3">مشاهده همه</span>
+                    <span href="" class="mt-lg-3 me-2 me-lg-0">مشاهده همه</span>
                     </a>
                 </div>
             </div>
@@ -1291,27 +1306,27 @@
             </div>
         </div>
 </section>
-<section class="baners container-fluid px-0 my-5">
-<div class="row col-xl-11 px-0">
-    <div class="col px-0">
+<section class="baners container-fluid px-lg-0 my-lg-5 my-3">
+<div class="row col-xl-11 px-lg-0">
+    <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
         <a href="" class="d-flex justify-content-center">
             <img src="./images/baner1.png" alt="" class="img-fluid ">
         </a>
     </div>
-      <div class="col px-0">
+      <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
         <a href="" class="d-flex justify-content-center">
             <img src="./images/baner2.png" alt="" class="img-fluid ">
         </a>
     </div>
-      <div class="col px-0">
+      <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
         <a href=""  class="d-flex justify-content-center">
             <img src="./images/baner3.png" alt="" class="img-fluid ">
         </a>
     </div>
 </div>
 </section>
-<section class="most-sale px-0 container-fluid ">
-    <div class="row col-xl-11 px-0">
+<section class="most-sale px-lg-0 container-fluid ">
+    <div class="row col-xl-11 px-lg-0">
         <div class="title-sec d-flex align-items-center w-100">
             <div class="d-flex align-items-center ps-3">
                 <h6>پرفروش های کتاب زبان های خارجی</h6>
@@ -1320,9 +1335,9 @@
                 <div class="title-line"></div>
             </div>
         </div>
-          <div class="col-12 pe-0 mt-4">
-                  <div class="row px-0">
-                <div class="col-11 pe-0">
+          <div class="col-12 px-0 mt-4">
+                  <div class="row px-lg-0">
+                <div class="col-lg-1 col-10 pe-0">
                      <div class="owl-carousel owl-theme most-owl">
                <div class="p-1">
                             <div class="product-item">
@@ -1437,7 +1452,7 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
+                <div class="col-lg-1 col-2 px-0">
                    <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
                     <span href="" class="mt-3">مشاهده همه</span>
@@ -1447,9 +1462,9 @@
                 </div>
     </div>
 </section>
-<section class="books container-fluid px-0 ">
-    <div class="row col-xl-11 px-0">
-        <div class="col">
+<section class="books container-fluid px-lg-0 ">
+    <div class="row col-xl-11 px-lg-0">
+        <div class="col-lg-3 col-6 my-lg-5 my-3 my-lg-0">
             <a href="" class="book-item ">
                <div class="book-item-img position-relative">
                  <img src="./images/b-back1.png" alt="" class="img-fluid">
@@ -1459,7 +1474,7 @@
                 <span>دوره اول متوسطه</span>
             </a>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-6 my-lg-5 my-3 my-lg-0">
            <a href="" class="book-item ">
                <div class="book-item-img position-relative">
                  <img src="./images/b-back2.png" alt="" class="img-fluid">
@@ -1470,7 +1485,7 @@
                 <span>دوره اول متوسطه</span>
             </a>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-6 my-lg-5 my-3 my-lg-0">
             <a href="" class="book-item ">
                <div class="book-item-img position-relative">
                  <img src="./images/b-back3.png" alt="" class="img-fluid">
@@ -1481,7 +1496,7 @@
                 <span>دوره اول متوسطه</span>
             </a>
         </div>
-        <div class="col">
+        <div class="col-lg-3 col-6 my-lg-5 my-3 my-lg-0">
              <a href="" class="book-item ">
                <div class="book-item-img position-relative">
                  <img src="./images/b-back4.png" alt="" class="img-fluid">
@@ -1494,16 +1509,16 @@
         </div>
     </div>
 </section>
-<section class="baner-two container-fluid px-0">
-    <div class="row col-xl-11 px-0">
+<section class="baner-two container-fluid px-lg-0">
+    <div class="row col-xl-11 px-lg-0">
     <a href="">
         <img src="./images/baner-two.png" alt="" class="img-fluid w-100">
     </a>
 
     </div>
 </section>
-<section class="most-sale px-0 container-fluid my-5">
-    <div class="row col-xl-11 px-0">
+<section class="most-sale px-lg-0 container-fluid my-lg-5 my-3">
+    <div class="row col-xl-11 px-lg-0">
         <div class="title-sec d-flex align-items-center w-100">
             <div class="d-flex align-items-center ps-3">
                 <h6>درسی و کمک درسی</h6>
@@ -1513,7 +1528,7 @@
             </div>
         </div>
           <div class="col-12 pe-0 mt-4">
-                  <div class="row px-0">
+                  <div class="row px-lg-0">
                 <div class="col-11 pe-0">
                      <div class="owl-carousel owl-theme most-owl">
                <div class="p-1">
@@ -1629,7 +1644,7 @@
                 </div>
             </div>
                 </div>
-                <div class="col-1 px-0">
+                <div class="col-1 px-lg-0">
                    <a href="" class="tab-see-all d-flex flex-column align-items-center justify-content-center">
                          <img src="./images/chev-all.png" alt="">
                     <span href="" class="mt-3">مشاهده همه</span>
@@ -1639,13 +1654,13 @@
                 </div>
     </div>
 </section>
-<section class="editor-list container-fluid px-0">
-    <div class="row col-xl-11 px-0">
-        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+<section class="editor-list container-fluid px-lg-0">
+    <div class="row col-xl-11 px-lg-0">
+        <div class="col-lg-1 col-2 d-flex flex-column align-items-center justify-content-center px-0">
             <span>لیست ناشران</span>
             <a href="" class="mt-2">لیست کامل</a>
         </div>
-        <div class="col-11 ed-list-owl ps-0">
+        <div class="col-lg-11 col-10 ed-list-owl ps-0">
             <div class="owl-carousel owl-theme owl-editors">
                <div class="p-1">
                  <div class="editor-item">
@@ -1742,36 +1757,498 @@
         </div>
     </div>
 </section>
-<section class="quart-baner container-fluid px-0 my-5">
-    <div class="row col-xl-11 px-0 baner-grid">
-        <div class="px-0">
+<section class="quart-baner container-fluid px-lg-0 my-lg-5 my-3">
+    <div class="row col-xl-11 px-lg-0 baner-grid">
+        <div class="px-lg-0">
             <a href="">
                 <img src="./images/q-baner1.png" alt="" class="img-fluid w-100">
             </a>
         </div>
-        <div class="px-0">
+        <div class="px-lg-0">
             <a href="">
                 <img src="./images/q-baner2.png" alt="" class="img-fluid w-100">
             </a>
         </div>
-        <div class="px-0">
+        <div class="px-lg-0">
             <a href="">
                 <img src="./images/q-baner3.png" alt="" class="img-fluid w-100">
             </a>
         </div>
-        <div class="px-0">
+        <div class="px-lg-0">
             <a href="">
                 <img src="./images/q-baner4.png" alt="" class="img-fluid w-100">
             </a>
         </div>
     </div>
 </section>
-<section class="suggest-book container-fluid px-0">
-    <div class="row col-xl-11"></div>
+<section class="suggest-book container-fluid px-lg-0">
+    <div class="row col-xl-11">
+        <div class="title-sec d-flex align-items-center w-100">
+            <div class="d-flex align-items-center ps-3">
+                <h6>کتاب های پیشنهادی</h6>
+            </div>
+            <div class="d-flex align-items-center line">
+                <div class="title-line"></div>
+            </div>
+        </div>
+        <div class="suggest-book-list mt-4">
+            <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">1</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">2</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">3</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">4</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">5</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">6</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">7</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug7.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">8</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug8.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">9</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug9.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">10</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug10.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">11</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+             <div class="suggest-item">
+                <a href="" class="d-flex  flex-column flex-lg-row align-items-center ">
+                    <div class="sug-img">
+                        <img src="./images/sug1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sug-txt d-flex flex-column flex-lg-row align-items-center ">
+                        <span class="sug-num">12</span>
+                        <h6 class="sung-name">کتاب آزمون های تمرینی QB 2 جراحی</h6>
+                    </div>
+                </a>
+            </div>
+
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="blog-section container-fluid px-lg-0 ">
+    <div class="row col-xl-11 px-lg-0">
+    
+        <div class="col-12 mb-4">
+            <div class="title-sec d-flex align-items-center w-100">
+                <div class="d-flex align-items-center ps-3">
+                    <h6 class="mb-0">از وبلاگ آژانس بوک</h6>
+                </div>
+                <div class="d-flex align-items-center line">
+                    <div class="title-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 px-lg-0">
+           <div class="owl-carousel owl-theme blog-owl">
+             <div class="p-1">
+                    <div class="blog-item">
+                    <a href="" class="d-block h-100">
+                        <div class="blog-image">
+                            <img src="./images/blog1.png" alt="کتاب کمیک" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-text">
+                                کتاب کمیک چیست و چرا باید آن را به کتابخانه خود اضافه کنید
+                            </p>
+                        </div>
+                    </a>
+                   </div>
+            </div>
+            <div class="p-1">
+                    <div class="blog-item">
+                    <a href="" class="d-block h-100">
+                        <div class="blog-image">
+                            <img src="./images/blog2.png" alt="کتاب کمیک" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-text">
+                                کتاب کمیک چیست و چرا باید آن را به کتابخانه خود اضافه کنید
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="p-1">
+                    <div class="blog-item">
+                    <a href="" class="d-block h-100">
+                        <div class="blog-image">
+                            <img src="./images/blog3.png" alt="کتاب کمیک" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-text">
+                                کتاب کمیک چیست و چرا باید آن را به کتابخانه خود اضافه کنید
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="p-1">
+                    <div class="blog-item">
+                    <a href="" class="d-block h-100">
+                        <div class="blog-image">
+                            <img src="./images/blog4.png" alt="کتاب کمیک" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-text">
+                                کتاب کمیک چیست و چرا باید آن را به کتابخانه خود اضافه کنید
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+             <div class="p-1">
+                    <div class="blog-item">
+                    <a href="" class="d-block h-100">
+                        <div class="blog-image">
+                            <img src="./images/blog3.png" alt="کتاب کمیک" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <p class="blog-text">
+                                کتاب کمیک چیست و چرا باید آن را به کتابخانه خود اضافه کنید
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           </div>
+        </div>  
+     </div>      
+    
+</section>
+<!-- About Section -->
+<section class="about-section container-fluid px-lg-0 ">
+    <div class="row col-xl-11 px-lg-0">
+        <div class="col-12">
+            <div class="about-box">
+               
+                <h3 class="about-title">فروشگاه اینترنتی آژانس بوک، بررسی، انتخاب و خرید آنلاین</h3>
+                
+              
+                <div class="about-content">
+                    
+                    <p>فروشگاه اینترنتی آژانس کتاب به صورت حضوری و غیر حضوری مبادرت به فروش انواع کتاب‌های دانشگاهی و غیر دانشگاهی می‌نماید.</p>
+                    <p>راهنمای ارتباطی در آژانس کتاب از جمله شبکه‌های اجتماعی می‌توانند یاری‌تان باشد تا درباره‌ی کتاب‌ها بحث شود.</p>
+                    <h4>خدمات ما</h4>
+                    <p>باشد که کتابِ او در کتابخانه‌اش یا از کتابی خوشش آمد و یا تمایل داشت که کتاب را در کتابخانه‌اش داشته باشد.</p>
+                    <ul>
+                        <li>مشاوره تخصصی</li>
+                        <li>ارسال سریع</li>
+                        <li>پشتیبانی ۲۴ ساعته</li>
+                    </ul>
+                    <p>ما در آژانس بوک معتقدیم که کتاب، پلی است به سوی دانش و آگاهی.</p>
+                    <div>
+                        <p>به همین دلیل، تلاش می‌کنیم بهترین و متنوع‌ترین کتاب‌ها را در اختیار شما قرار دهیم.</p>
+                    </div>
+                    <p>خرید آسان، ارسال سریع و پشتیبانی حرفه‌ای از ویژگی‌های بارز خدمات ما است.</p>
+                </div>
+                
+                
+                <button class="read-more-btn" id="readMoreBtn">
+                    <span class="btn-text">مشاهده بیشتر</span>
+                    <i class="fas fa-chevron-down btn-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container-fluid px-lg-0 py-4 footer-top">
+            <div class="row col-xl-11 px-lg-0">
+                <div class="col-12 ">
+                    <a href="">
+                         <img src="./images/logo.png" alt="" class="footer-logo">
+                    </a>
+                   
+                </div>
+                <div class="col-12 mt-4 mb-5">
+                    <div class="info-bar">
+                           <div class="info-item phone ms-3">
+       <img src="./images/phone.png" alt="">
+        <span>تلفن : </span>
+        <a href="tel:02166450888">021-66450888</a>
+    </div>
+     <div class="divider"></div>
+    <div class="info-item address me-3 ">
+        <img src="./images/loc.png" alt="">
+        <span>
+            آدرس فروشگاه: تهران، میدان انقلاب، ضلع جنوب شرقی میدان، پلاک ۷، نبش کوچه آبرو
+        </span>
+    </div>
+
+   
+
+ 
+</div>
+
+                </div>
+                <div class="col-12 mt-4 row  services">
+                    <div class="col-lg-3 col-6">
+                       <div class="service-item text-center">
+                         <div class="service-img mb-3">
+                            <img src="./images/s-1.png" alt="">
+                        </div>
+                        <span class="">ارسال سریع</span>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                       <div class="service-item text-center">
+                         <div class="service-img mb-3">
+                            <img src="./images/s-2.png" alt="">
+                        </div>
+                        <span class="">ضمانت اصل بودن کالا</span>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                       <div class="service-item text-center">
+                         <div class="service-img mb-3">
+                            <img src="./images/s-3.png" alt="">
+                        </div>
+                        <span class="">فروش اقساطی </span>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                       <div class="service-item text-center">
+                         <div class="service-img mb-3">
+                            <img src="./images/s-4.png" alt="">
+                        </div>
+                        <span class="">تضمین بهترین قیمت </span>
+                       </div>
+                    </div>
+                     
+
+                </div>
+              
+            </div>
+        </div>
+        <div class="container-fluid px-lg-0 mt-4 pb-4 f-middle">
+              <div class="row col-xl-11">
+                <div class="col-12 row">
+                    <div class="col-lg-9">
+                        <div class="footer-middle">
+           
+          
+            <div class="footer-column">
+                <input type="checkbox" id="why-toggle" class="accordion-toggle">
+                <label for="why-toggle" class="accordion-label">
+                    <h4>درباره ما </h4>
+                </label>
+                <ul class="footer-links">
+                    <li><a href="#">آژانس بوک در یک نگاه</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">سوالات متداول </a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="popular-toggle" class="accordion-toggle">
+                <label for="popular-toggle" class="accordion-label">
+                    <h4> خدمات مشتریان</h4>
+                </label>
+                <ul class="footer-links">
+                    <li><a href="#">معرفی تخفیف ها  </a></li>
+                    <li><a href="#"> پرسش های متداول  </a></li>
+                    <li><a href="#"> چگونگی بازگشت کالا</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-column">
+                <input type="checkbox" id="links-toggle" class="accordion-toggle">
+                <label for="links-toggle" class="accordion-label">
+                    <h4>دسترسی سریع  </h4>
+                </label>
+                <ul class="footer-links">
+                    <li><a href="#"> درباره ما</a></li>
+                    <li><a href="#">تماس با ما  </a></li>
+                     <li><a href="#">فرصت شغلی</a></li>
+                  
+                  
+                </ul>
+            </div>
+              <div class="footer-column">
+                <input type="checkbox" id="access-toggle" class="accordion-toggle">
+                <label for="access-toggle" class="accordion-label">
+                    <h4>  راهنمایی خرید</h4>
+                </label>
+                <ul class="footer-links">
+                    <li><a href="#">چگونگی ثبت سفارش</a></li>
+                    <li><a href="#"> چگونگی ارسال کالا</a></li>
+                      <li><a href="#"> چگونگی  پرداخت</a></li>
+                   
+                </ul>
+            </div>
+            
+           
+            
+         
+            
+          
+        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="socials d-flex justify-content-between">
+                            <div class="social-item">
+                                <a href="">
+                                    <img src="./images/yube.png" alt="">
+                                </a>
+                            </div>
+                             <div class="social-item">
+                                <a href="">
+                                    <img src="./images/linkd.png" alt="">
+                                </a>
+                            </div>
+                             <div class="social-item">
+                                <a href="">
+                                    <img src="./images/whats.png" alt="">
+                                </a>
+                            </div>
+                             <div class="social-item">
+                                <a href="">
+                                    <img src="./images/telg.png" alt="">
+                                </a>
+                            </div>
+                             <div class="social-item">
+                                <a href="">
+                                    <img src="./images/insta.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="e-namads d-flex justify-content-end mt-3">
+                            <div class="e-1">
+                                <a href="">
+                                    <img src="./images/e-1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="e-1 me-4">
+                                <a href="">
+                                    <img src="./images/e2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="container-fluid px-lg-0 footer-last">
+            <div class="row col-xl-11">
+                
+                <div class="footer-rights d-flex flex-column flex-lg-row justify-content-between py-4 align-items-center">
+                    <p>© کلیه حقوق مادی و معنوی این وبسایت محفوظ و متعلق به <span>فروشگاه اینترنتی آژانس بوک</span> می باشد.</p>
+                    <p>Website designed by <span>NONEGAR PARDAZESH</span> developed by NONEGAR</p>
+                </div>
+             
+           
+            </div>
+        </div>
+       
+    </footer>
 
 
      <script src="./js/jquery.min.js"></script>

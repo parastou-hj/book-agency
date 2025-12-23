@@ -239,7 +239,7 @@ $(document).ready(function() {
                 rtl: true,
                 loop: true,
                 margin: 10,
-                nav: false,
+                nav: true,
                 dots: false,
                 // center: true,
                 autoplay: true,
@@ -248,6 +248,10 @@ $(document).ready(function() {
                 smartSpeed: 1000,
         //          animateOut: 'fadeOut',
         // animateIn: 'fadeIn',
+         navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
                
                 responsive: {
                     0: {
@@ -288,7 +292,7 @@ $(document).ready(function() {
                
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 3,
                         
                     },
                      1200: {
@@ -329,7 +333,7 @@ $(document).ready(function() {
                
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 2,
                         
                     },
                      1200: {
@@ -357,12 +361,12 @@ $(document).ready(function() {
         const owlOptions = {
             loop: true,
             // margin: 30,
-            nav: true, 
+            nav: false, 
             dots: false, 
             rtl: true, 
             responsive:{
                 0:{
-                    items:1.5
+                    items:2.4
                 },
                 600:{
                     items:2
@@ -415,7 +419,7 @@ $(document).ready(function() {
                
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 2,
                         
                     },
                      1200: {
@@ -454,7 +458,7 @@ $(document).ready(function() {
                
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 3,
                         
                     },
                      1200: {
@@ -475,3 +479,128 @@ $(document).ready(function() {
                 articlesCarousel.trigger('next.owl.carousel');
             });
         });
+
+        // ========== Blog Section Owl Carousel ==========
+$(document).ready(function(){
+    var blogOwl = $('.blog-owl').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1.5,
+                
+                nav: false,
+                dots: true
+            },
+            576: {
+                items: 2,
+              
+                nav: true,
+                dots: true
+            },
+            768: {
+                items: 2,
+              
+                nav: true,
+                dots: true
+            },
+            992: {
+                items: 3,
+             
+                nav: true,
+                dots: false
+            },
+            1200: {
+                items: 4,
+                nav: false,
+                dots: true
+            }
+        }
+    });
+});
+// ========== Smart Read More / Read Less Functionality ==========
+$(document).ready(function() {
+    const aboutContent = $('.about-content');
+    const readMoreBtn = $('#readMoreBtn');
+    const btnText = $('.btn-text');
+    const btnIcon = $('.btn-icon');
+    
+    // تنظیمات: تعداد المنت‌هایی که در ابتدا نمایش داده شوند
+    const initialVisibleElements = 2; // می‌توانید تغییر دهید
+    
+    // دریافت تمام المنت‌های مستقیم داخل about-content
+    const allElements = aboutContent.children();
+    const totalElements = allElements.length;
+    
+    // اگر تعداد المنت‌ها کمتر یا مساوی initialVisibleElements باشد، دکمه را مخفی کن
+    if (totalElements <= initialVisibleElements) {
+        readMoreBtn.addClass('hidden');
+        return; // خروج از تابع
+    }
+    
+    // مخفی کردن المنت‌های اضافی
+    function hideExtraElements() {
+        allElements.each(function(index) {
+            if (index >= initialVisibleElements) {
+                $(this).addClass('hidden-element');
+            }
+        });
+    }
+    
+    // نمایش تمام المنت‌ها با انیمیشن
+    function showAllElements() {
+        allElements.each(function(index) {
+            if (index >= initialVisibleElements) {
+                const element = $(this);
+                setTimeout(function() {
+                    element.removeClass('hidden-element').addClass('fade-in');
+                }, index * 50); // تاخیر برای انیمیشن زنجیره‌ای
+            }
+        });
+    }
+    
+    // اجرای اولیه
+    hideExtraElements();
+    
+    // رویداد کلیک روی دکمه
+    readMoreBtn.on('click', function() {
+        const isActive = $(this).hasClass('active');
+        
+        if (isActive) {
+            // بستن متن
+            $(this).removeClass('active');
+            btnText.text('مشاهده بیشتر');
+            
+            // مخفی کردن المنت‌های اضافی
+            allElements.each(function(index) {
+                if (index >= initialVisibleElements) {
+                    $(this).addClass('hidden-element').removeClass('fade-in');
+                }
+            });
+            
+            // اسکرول به بالای سکشن (اختیاری)
+            $('html, body').animate({
+                scrollTop: $('.about-section').offset().top - 100
+            }, 500);
+            
+        } else {
+            // باز کردن متن
+            $(this).addClass('active');
+            btnText.text('مشاهده کمتر');
+            
+            // نمایش تمام المنت‌ها
+            showAllElements();
+        }
+    });
+});

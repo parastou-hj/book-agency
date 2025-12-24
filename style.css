@@ -515,7 +515,7 @@ z-index: 1;
 
   /* ==================== Cart Submenu Styles ==================== */
   .cart-btn{
-      border: 1px solid hsl(0deg 0% 86.27%);
+      border: 1px solid hsl(0deg 1.17% 62.7%);
     border-radius: 8px;
      margin-left: 10px;
       padding: 2px;
@@ -533,8 +533,8 @@ z-index: 1;
   }
 .cart-badge{
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -7px;
+  right: -7px;
   background-color: var(--primary-color);
   width: 20px;
   height: 20px;
@@ -1900,9 +1900,9 @@ z-index: 1;
     background-color: var(--primary-color);
     right: 12%;
     color: #fff;
-    padding: 5px 15px;
+    padding: 8px 20px;
     border-radius: 25px;
-    font-size: .9em;
+    /* font-size: .9em; */
 }
 .baner-owl .owl-nav button {
     position: absolute;
@@ -1995,8 +1995,20 @@ box-shadow: 0px 0px 20px 2px #5555558f;
 .sale-owl .product-txt{
     color: #fff;
 }
+.sale-txt img{
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    z-index: 0;
+}
+.sale-txt p{
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    font-family: arabic;
+}
 .product-item-img{
-    height: 165px;
+    height: 160px;
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -2040,7 +2052,7 @@ color: #616161;
 }
 .sale-title{
     font-family:IRANYekanWebMedium ;
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding: 10px 0px;
 }
 .sale-title{
@@ -2888,6 +2900,9 @@ color: #616161;
 
 /* Desktop View */
 @media (min-width: 992px) {
+    .product-item-img{
+        height: 175px;
+    }
     .about-section {
         /* padding: 30px 0; */
     }
@@ -3126,4 +3141,11 @@ footer{
 .footer-rights p:nth-child(2) {
     color:var(--primary-color);
 
+}
+.fix-chat{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: max-content;
+    z-index: 1000;
 }

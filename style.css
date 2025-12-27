@@ -1904,16 +1904,16 @@ z-index: 1;
     border-radius: 25px;
     /* font-size: .9em; */
 }
-.baner-owl .owl-nav button {
+ .owl-nav button {
     position: absolute;
     bottom: 20px;
-    background-color: #3333336c;
+    background-color: #33333377 !important;
     color: rgba(236, 236, 236, 0.795) !important;
     width: 35px;
     height: 35px;
     border-radius: 50% !important;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(8, 52, 140, 0.3);
+    /* box-shadow: 0 4px 15px rgba(8, 52, 140, 0.3); */
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -1932,7 +1932,7 @@ z-index: 1;
     transform:  scale(1.1);
 }
 
-.baner-owl .owl-nav button span {
+.owl-nav button span {
     font-size: 26px;
     line-height: 1;
     display: flex;
@@ -1940,8 +1940,13 @@ z-index: 1;
     justify-content: center;
 }
 
-.baner-owl .owl-nav button:disabled {
+ .owl-nav button:disabled {
     opacity: 0.5;
+    cursor: not-allowed;
+}
+ .owl-editors .owl-nav button:disabled {
+    opacity: 0 !important;
+    visibility: hidden;
     cursor: not-allowed;
 }
 
@@ -1957,8 +1962,8 @@ body.offcanvas-open {
 .cat-image{
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
+    right: 25%;
+    width: 50% !important;
     height: 100%;
     object-fit: scale-down;
 }
@@ -1967,7 +1972,75 @@ body.offcanvas-open {
     font-size: 1em;
     text-align: center;
     font-family: IRANYekanWebMedium;
+     transition: all 0.3s ease;
 }
+/* ==================== Category Item Hover Effect with Swing Animation ==================== */
+.cat-item {
+    transition: all 0.3s ease;
+}
+.cat-item .cat-item-img img:first-child {
+  
+    transition: all 0.3s ease;
+
+}
+
+
+.cat-item:hover .cat-item-img img:first-child {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+}
+
+/* Swing Animation برای تصویر داخلی */
+.cat-item:hover .cat-image {
+    animation: swing 0.6s ease-in-out;
+}
+
+.cat-item:hover h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: all 0.3s ease;
+
+}
+
+/* Keyframe برای انیمیشن زنگ خوردن */
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* Alternative: انیمیشن Shake (تکون خوردن افقی) */
+/* اگر می‌خواید به جای rotate، به چپ و راست حرکت کنه از این استفاده کنید:
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-8px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(8px);
+    }
+}
+
+.cat-item:hover .cat-image {
+    animation: shake 0.5s ease-in-out;
+}
+*/
 
 
 /* off-sec */
@@ -1979,7 +2052,7 @@ body.offcanvas-open {
     #5a4fb3 100%
 );
 border-radius: 25px;
-padding:10px 30px 20px 30px;
+padding:10px 30px 10px 0px;
 box-shadow: 0px 0px 20px 2px #5555558f;
    
     
@@ -1989,16 +2062,112 @@ box-shadow: 0px 0px 20px 2px #5555558f;
     padding: 8px;
     border-radius: 15px;
 }
+.sale-owl .product-item:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 0 8px 2px hsla(42, 88%, 84%, 0.637);
+    border-color: var(--third-color);
+}
 .product-txt h1{
     font-size: 1em;
 }
 .sale-owl .product-txt{
     color: #fff;
 }
+/* ==================== Timer Styles ==================== */
+.timer-sec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.timer-sec > span {
+    font-size: 1em;
+    color: #fff;
+    font-family: IRANYekanWebMedium;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.timer-box {
+    background: #fff;
+    border-radius: 10px;
+    padding:5px 8px;
+    /* min-width: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.timer-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.timer-value {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: IRANYekanWebExtraBold;
+}
+
+.timer-separator {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    animation: blink 1s infinite;
+}
+
+/* @keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0.3;
+    }
+} */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .off-sec .row {
+   
+    padding: 10px;
+    
+}
+
+
+    .timer-sec {
+        gap: 10px;
+    }
+    
+          .timer-box {
+        padding: 3px 5px;
+        /* min-width: 40px; */
+        font-size: .9em;
+        border-radius: 5px;
+    }
+    .timer-sec > span {
+    font-size: .9em;
+    }
+    
+    .timer-value {
+        font-size: 1em;
+    }
+    
+    .timer-separator {
+        font-size: 1.1em;
+    }
+   
+}
 .sale-txt img{
     position: absolute;
-    bottom: -100px;
-    right: -100px;
+    bottom: -80px;
+    right: -125px;
     z-index: 0;
 }
 .sale-txt p{
@@ -2008,7 +2177,7 @@ box-shadow: 0px 0px 20px 2px #5555558f;
     font-family: arabic;
 }
 .product-item-img{
-    height: 160px;
+    height: 140px;
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -2049,6 +2218,7 @@ color: #616161;
     width: 100%;
     color: #fff;
     border-bottom: 1px solid hsl(211.18deg 47.22% 57.65%);
+   
 }
 .sale-title{
     font-family:IRANYekanWebMedium ;
@@ -2058,6 +2228,33 @@ color: #616161;
 .sale-title{
     border-bottom: 1px solid #fff;
 }
+
+.carousel-nav-btn .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff !important;
+    color: rgb(141, 140, 140) !important;
+    border: 1px solid rgb(141, 140, 140) !important ;
+    width: 35px;
+    height: 35px;
+   
+   
+ }
+.carousel-nav-btn .owl-nav button.owl-prev{
+    right: 10px;
+}
+
+.carousel-nav-btn .owl-nav button.owl-next {
+    left: 10px;
+}
+
+.carousel-nav-btn .owl-nav button:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+    /* transform:  scale(1.1); */
+}
+
 
 
 /* gallery-tab */
@@ -2134,18 +2331,8 @@ color: #616161;
             transform: scale(1.05);
         }
 
-        .owl-nav button {
-            position: absolute;
-           
-            background: rgba(0, 0, 0, 0.4) !important;
-            color: white !important;
-            width: 44px;
-            height: 44px;
-            border-radius: 50% !important;
-        }
-        .owl-nav button.owl-prev { left: -15px; }
-        .owl-nav button.owl-next { right: -15px; }
-        .owl-nav button span { font-size: 28px; line-height: 0.8; }
+        
+       
         
 
 .product-item{
@@ -2155,6 +2342,7 @@ color: #616161;
     transition:all .3s ;
 
 }
+
 /* ==================== Product Item Simple Hover ==================== */
 
 .product-item {
@@ -2288,6 +2476,59 @@ color: #616161;
     font-size: 1.3em;
     font-family: IRANYekanWebMedium;
 
+}
+/* ==================== Editor Item Hover Effect - Simple Blue Shine (Right to Left) ==================== */
+.editor-item {
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+
+}
+
+.editor-item:hover {
+    background-color: rgba(8, 52, 140, 0.1);
+ 
+    border: 2px solid var(--primary-color);
+}
+
+/* Shine Effect - Right to Left */
+.editor-item::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 150%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(-90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.6), 
+        transparent);
+    transform: rotate(-45deg);
+    transition: left 0.6s ease;
+}
+
+.editor-item:hover::after {
+    left: -100%;
+}
+
+/* Text Effect */
+.editor-item:hover span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.editor-item span {
+    transition: all 0.3s ease;
+}
+
+/* Logo Brightness */
+.editor-item:hover .ed-img img {
+    filter: brightness(1.1);
+}
+
+.ed-img img {
+    transition: filter 0.3s ease;
 }
 .baner-grid{
     display: grid;
@@ -2900,6 +3141,13 @@ color: #616161;
 
 /* Desktop View */
 @media (min-width: 992px) {
+    .cat-image{
+   
+    right: 0;
+    width: 100% !important;
+    height: 100%;
+    
+}
     .product-item-img{
         height: 175px;
     }
@@ -3034,6 +3282,90 @@ footer{
         }
 
         @media (max-width:991px){
+            .sug-txt h6 {
+   text-align: center;
+}
+            .book-img {
+    position: absolute;
+    bottom: -20px;
+    right: 10%;
+    width: 80%;
+}
+.b-shadow {
+    bottom: -40px;
+}
+.books {
+    margin: 80px 0px 60px 0px;
+}
+.book-item span {
+    margin: 30px;
+}
+.baner-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+              .footer-rights p{
+                text-align: center !important;
+            }
+            .footer-column h4 {
+    font-size: 1em;
+            }
+            .info-bar{
+                flex-direction: column;
+                align-items: start;
+            }
+            .back-to-top {
+                top: 45px !important;
+    
+    left: 20px !important;
+            }
+            .tab-see-all span {
+    font-size: 1em;
+    text-align: center;
+}
+            .tab-link{
+                padding: 15px;
+                font-size: 14px;
+            }
+             .sale-txt p{
+    font-size: 1.3em;
+   
+}
+            .sale-txt img {
+    position: absolute;
+    bottom: -30px;
+    right: -90px;
+    z-index: 0;
+    width: 300px;
+}
+
+            .sale-title {
+   
+    font-size: 1em;
+
+}
+            .baner-btn{
+                bottom: 10px;
+                right: 8%;
+                      font-size: .8em;
+        padding: 5px 10px;
+            }
+            .search-input{
+  
+    width: 100%;
+            }
+            .user {
+    padding: 0px 8px;
+}
+.user-btn {
+    padding: 10px;
+    border: 1px solid hsl(0deg 1.17% 62.7%);
+}
+.cart-btn {
+   
+    margin-left: 0px;
+   
+}
             .footer-middle{
     flex-direction:column;
 }
@@ -3063,6 +3395,7 @@ footer{
                 position: relative;
                 user-select: none;
             }
+          
             
             .accordion-label {
                 display: block;
@@ -3078,7 +3411,7 @@ footer{
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                font-size: 1.5rem;
+                font-size: 1.1em;
                 color: #666;
                 transition: transform 0.3s;
             }
@@ -3148,4 +3481,170 @@ footer{
     right: 10px;
     width: max-content;
     z-index: 1000;
+}
+.back-to-top {
+    position: absolute;
+    top: 105px;
+    left: 85px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(129, 129, 129, 0.4);
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+/* ==================== Book Item Hover Effect ==================== */
+.book-item {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.book-item:hover {
+    /* transform: translateY(-15px); */
+}
+
+/* Book Image Container */
+.book-item-img {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.book-item:hover .book-item-img {
+    transform: perspective(1000px) rotateY(-5deg);
+}
+
+
+
+.book-item-img img:first-child {
+    transition: all 0.4s ease;
+}
+
+/* Main Book Image - Floating Effect */
+.book-item:hover .book-img {
+    animation: bookFloat 2s ease-in-out infinite;
+    /* filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.3)); */
+}
+
+@keyframes bookFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Shadow Enhancement */
+.book-item:hover .b-shadow {
+    opacity: 0.8;
+    transform: scale(1.2);
+    filter: blur(8px);
+}
+
+.b-shadow {
+    transition: all 0.4s ease;
+    opacity: 0.6;
+}
+
+/* Text Effect */
+.book-item:hover span {
+    color: var(--primary-color);
+    font-weight: 700;
+    transform: scale(1.05);
+    /* text-shadow: 0 2px 8px rgba(8, 52, 140, 0.2); */
+}
+
+.book-item span {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+
+
+/* ==================== Social Items Hover Effect ==================== */
+.social-item {
+    transition: all 0.3s ease;
+}
+
+.social-item:hover {
+    /* transform: translateY(-5px); */
+}
+
+.social-item a {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Rotate Effect */
+.social-item:hover a {
+    transform: rotate(360deg);
+  
+}
+
+
+.social-item a img {
+    transition: all 0.4s ease;
+   
+}
+.footer-links a:hover{
+    color:var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+/* ==================== Banner Hover Effect - Simple & Elegant (به جز baner-owl) ==================== */
+
+/* برای بنرهای baners (3 تا بنر) */
+.baners a,
+/* برای بنر بزرگ */
+.baner-two a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Shine Effect - از راست به چپ */
+.baners a::before,
+.baner-two a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.3), 
+        transparent);
+    transition: right 0.7s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.baners a:hover::before,
+.baner-two a:hover::before {
+    right: 100%;
+}
+
+.baners a:hover img,
+.baner-two a:hover img {
+    /* transform: scale(1.05); */
+    filter: brightness(1.1);
+}
+
+.baners a img,
+.baner-two a img {
+    transition: all 0.5s ease;
 }

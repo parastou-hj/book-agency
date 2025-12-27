@@ -239,7 +239,7 @@ $(document).ready(function() {
                 rtl: true,
                 loop: true,
                 margin: 10,
-                nav: true,
+                nav: false,
                 dots: false,
                 // center: true,
                 autoplay: true,
@@ -258,19 +258,19 @@ $(document).ready(function() {
                         items: 1,
                         
                     },
+                     1200: {
+                        items: 1,
+                nav: true,
+
+                        
+                    },
                     
                   
                 }
             });
             
             
-            $('.baner-right').click(function() {
-                articlesCarousel.trigger('prev.owl.carousel');
-            });
-            
-            $('.baner-nav-left').click(function() {
-                articlesCarousel.trigger('next.owl.carousel');
-            });
+         
         });
 
 
@@ -305,13 +305,7 @@ $(document).ready(function() {
             });
             
             
-            $('.baner-right').click(function() {
-                articlesCarousel.trigger('prev.owl.carousel');
-            });
-            
-            $('.baner-nav-left').click(function() {
-                articlesCarousel.trigger('next.owl.carousel');
-            });
+          
         });
 
 
@@ -320,7 +314,7 @@ $(document).ready(function() {
             var articlesCarousel = $('.sale-owl').owlCarousel({
                 rtl: true,
                 loop: true,
-                margin: 10,
+                margin: 5,
                 nav: false,
                 dots: false,
             
@@ -330,14 +324,24 @@ $(document).ready(function() {
                 smartSpeed: 1000,
         //          animateOut: 'fadeOut',
         // animateIn: 'fadeIn',
+         navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
                
                 responsive: {
                     0: {
-                        items: 2,
+                        items: 1.3,
+                        
+                    },
+                    768: {
+                        items: 3.5,
                         
                     },
                      1200: {
                         items: 5.3,
+                nav: true,
+
                         
                     },
                     
@@ -346,13 +350,7 @@ $(document).ready(function() {
             });
             
             
-            $('.baner-right').click(function() {
-                articlesCarousel.trigger('prev.owl.carousel');
-            });
-            
-            $('.baner-nav-left').click(function() {
-                articlesCarousel.trigger('next.owl.carousel');
-            });
+          
         });
 
         
@@ -362,11 +360,15 @@ $(document).ready(function() {
             loop: true,
             // margin: 30,
             nav: false, 
+               navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
             dots: false, 
             rtl: true, 
             responsive:{
                 0:{
-                    items:2.4
+                    items:2.1
                 },
                 600:{
                     items:2
@@ -375,7 +377,9 @@ $(document).ready(function() {
                     items:3
                 },
                 1024:{
-                    items:6 
+                    items:6 ,
+            nav: true, 
+
                 }
             }
         };
@@ -416,14 +420,19 @@ $(document).ready(function() {
                 smartSpeed: 1000,
         //          animateOut: 'fadeOut',
         // animateIn: 'fadeIn',
+             navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
                
                 responsive: {
                     0: {
-                        items: 2,
+                        items: 1.6,
                         
                     },
                      1200: {
                         items: 6,
+                        nav: true,
                         
                     },
                     
@@ -463,6 +472,8 @@ $(document).ready(function() {
                     },
                      1200: {
                         items: 8.5,
+                nav: true,
+
                         
                     },
                     

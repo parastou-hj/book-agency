@@ -11,9 +11,11 @@
     <title>آژانس بوک</title>
 </head>
 <body>
-     <header>
+     <header class='main-header'>
         <div class="advertise">
-            <img src="./images/ad-baner.png" alt="">
+           <a>
+                <img src="./images/ad-baner.png" alt="">
+           </a>
          
         </div>
         <div class="container-fluid header-container p-0">
@@ -46,8 +48,9 @@
                             </div>
                             
                             <div class="cart-items">
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
+                                <div >
+                                  <a class="cart-item">
+                                        <div class="cart-item-image">
                                         <img src="./images/sale1.png" >
                                     </div>
                                     <div class="cart-item-details">
@@ -61,9 +64,11 @@
                                     <button class="remove-item-btn">
                                         <i class="fa fa-times"></i>
                                     </button>
+                                  </a>
                                 </div>
-                                  <div class="cart-item">
-                                    <div class="cart-item-image">
+                                  <div >
+                                   <a class="cart-item">
+                                        <div class="cart-item-image">
                                         <img src="./images/sale2.png" >
                                     </div>
                                     <div class="cart-item-details">
@@ -77,6 +82,7 @@
                                     <button class="remove-item-btn">
                                         <i class="fa fa-times"></i>
                                     </button>
+                                   </a>
                                 </div>
                                 
                                 
@@ -266,15 +272,7 @@
                         <i class="fas fa-chevron-left category-arrow"></i>
                     </div>
 
-                    <div class="category-item" data-category="test">
-                        <div class="category-item-content">
-                            <div class="category-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <span class="category-name">بانک تست</span>
-                        </div>
-                        <i class="fas fa-chevron-left category-arrow"></i>
-                    </div>
+                   
 
                 </div>
 
@@ -290,7 +288,10 @@
 
                     <div class="subcategory-grid">
                         <div class="subcategory-column">
+                       <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/enginer.png' />
                             <h4>رشته‌های فنی و مهندسی</h4>
+                       </div>
                             <ul class="subcategory-list">
                                 <li><a href="#">مهندسی کامپیوتر</a></li>
                                 <li><a href="#">مهندسی برق</a></li>
@@ -301,7 +302,11 @@
                         </div>
 
                         <div class="subcategory-column">
-                            <h4>علوم پایه</h4>
+                              <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/science.png' />
+                              <h4>علوم پایه</h4>
+                       </div>
+                        
                             <ul class="subcategory-list">
                                 <li><a href="#">ریاضیات</a></li>
                                 <li><a href="#">فیزیک</a></li>
@@ -312,7 +317,10 @@
                         </div>
 
                         <div class="subcategory-column">
-                            <h4>علوم انسانی</h4>
+                            <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/human.png' />
+                              <h4>علوم انسانی</h4>
+                       </div>
                             <ul class="subcategory-list">
                                 <li><a href="#">روانشناسی</a></li>
                                 <li><a href="#">جامعه‌شناسی</a></li>
@@ -337,7 +345,11 @@
 
                     <div class="subcategory-grid">
                         <div class="subcategory-column">
-                            <h4>علوم پایه پزشکی</h4>
+                              <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/medcin.png' />
+                               <h4>علوم پایه پزشکی</h4>
+                       </div>
+                          
                             <ul class="subcategory-list">
                                 <li><a href="#">آناتومی</a></li>
                                 <li><a href="#">فیزیولوژی</a></li>
@@ -348,7 +360,12 @@
                         </div>
 
                         <div class="subcategory-column">
-                            <h4>تخصص‌های بالینی</h4>
+                             <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/med2.png' />
+                               <h4>تخصص‌های بالینی</h4>
+                       </div>
+                          
+                          
                             <ul class="subcategory-list">
                                 <li><a href="#">داخلی</a></li>
                                 <li><a href="#">جراحی</a></li>
@@ -359,7 +376,11 @@
                         </div>
 
                         <div class="subcategory-column">
-                            <h4>رشته‌های پیراپزشکی</h4>
+                             <div class='d-flex align-items-center subcategory-column-header '>
+                                <img src='./images/med3.png' />
+                              <h4>رشته‌های پیراپزشکی</h4>
+                       </div>
+                           
                             <ul class="subcategory-list">
                                 <li><a href="#">پرستاری</a></li>
                                 <li><a href="#">مامایی</a></li>
@@ -373,48 +394,7 @@
                    
                 </div>
 
-                <div class="subcategories-content" data-content="test">
-                    <div class="subcategory-header">
-                        <h3 class="subcategory-title">بانک تست</h3>
-                        <a href="#" class="view-all-link">
-                            <span>مشاهده همه</span>
-                            <i class="fas fa-arrow-left"></i>
-                        </a>
-                    </div>
-
-                    <div class="subcategory-grid">
-                        <div class="subcategory-column">
-                            <h4>آزمون‌های ورودی</h4>
-                            <ul class="subcategory-list">
-                                <li><a href="#">کنکور سراسری</a></li>
-                                <li><a href="#">کنکور کارشناسی ارشد</a></li>
-                                <li><a href="#">آزمون دکتری</a></li>
-                                <li><a href="#">المپیادها</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="subcategory-column">
-                            <h4>آزمون‌های تخصصی</h4>
-                            <ul class="subcategory-list">
-                                <li><a href="#">آیلتس - IELTS</a></li>
-                                <li><a href="#">تافل - TOEFL</a></li>
-                                <li><a href="#">جی آر ای - GRE</a></li>
-                                <li><a href="#">آزمون استخدامی</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="subcategory-column">
-                            <h4>آزمون‌های پزشکی</h4>
-                            <ul class="subcategory-list">
-                                <li><a href="#">آزمون دستیاری</a></li>
-                                <li><a href="#">بورد تخصصی</a></li>
-                                <li><a href="#">USMLE</a></li>
-                                <li><a href="#">آزمون علوم پایه</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+               
 
              
             </div>
@@ -441,114 +421,214 @@
         <div class="mobile-offcanvas-overlay"></div>
 
         <!-- mobile-nav -->
-<div class="mobile-offcanvas">
-    <div class="offcanvas-header">
-        <div class="offcanvas-logo">
-            <img src="./images/logo.png" alt="لوگو">
-        </div>
-        <button class="offcanvas-close">
-            <i class="fa fa-times"></i>
-        </button>
+<div class="off-canvas">
+  <div class="off-canvas-header d-flex justify-content-between">
+    <span>منوی دسترسی</span>
+    <div class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
     </div>
+  </div>
+  
+  <div class="off-canvas-nav">
     
-    <div class="offcanvas-body">
-        <ul class="offcanvas-nav">
-            <li><a href="">صفحه اصلی</a></li>
-            <!-- Mega Menu Categories -->
-            <li class="offcanvas-megamenu-trigger">
-                <a href="#" class="offcanvas-submenu-toggle">
-                    <img src="./images/category.png" alt="" style="width: 20px; margin-left: 8px;">
-                    دسته بندی ها
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <ul class="offcanvas-megamenu">
-                    <!-- University Category -->
-                    <li class="offcanvas-category-item">
-                        <a href="#" class="offcanvas-category-toggle">
-                            <div class="offcanvas-category-header">
-                                <i class="fas fa-book"></i>
-                                <span>جزوات دانشگاهی</span>
-                            </div>
-                            <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <ul class="offcanvas-subcategory">
-                            <li class="offcanvas-subcategory-group">
-                                <h4>رشته‌های فنی و مهندسی</h4>
-                                <ul>
-                                    <li><a href="#">مهندسی کامپیوتر</a></li>
-                                    <li><a href="#">مهندسی برق</a></li>
-                                    <li><a href="#">مهندسی مکانیک</a></li>
-                                    <li><a href="#">مهندسی عمران</a></li>
-                                    <li><a href="#">مهندسی شیمی</a></li>
-                                </ul>
-                            </li>
-                          
-                           
-                        </ul>
-                    </li>
-
-                    <!-- Medical Category -->
-                    <li class="offcanvas-category-item">
-                        <a href="#" class="offcanvas-category-toggle">
-                            <div class="offcanvas-category-header">
-                                <i class="fas fa-stethoscope"></i>
-                                <span>کتاب‌های پزشکی</span>
-                            </div>
-                            <i class="fa fa-chevron-down"></i>
-                        </a>
-                        <ul class="offcanvas-subcategory">
-                            <li class="offcanvas-subcategory-group">
-                                <h4>علوم پایه پزشکی</h4>
-                                <ul>
-                                    <li><a href="#">آناتومی</a></li>
-                                    <li><a href="#">فیزیولوژی</a></li>
-                                    <li><a href="#">بیوشیمی</a></li>
-                                    <li><a href="#">میکروب‌شناسی</a></li>
-                                    <li><a href="#">پاتولوژی</a></li>
-                                </ul>
-                            </li>
-                           
-                        </ul>
-                    </li>
-
-                   
-                </ul>
-            </li>
-            <li><a href="">مقالات</a></li>
-            <li><a href="">پروژه ها</a></li>
-            <li><a href="">تماس با ما</a></li>
-            
-            <li class="offcanvas-has-submenu">
-                <a href="#" class="offcanvas-submenu-toggle">
-                    درباره ما
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-                <ul class="offcanvas-submenu">
-                    <li><a href="#">تاریخچه شرکت</a></li>
-                    <li><a href="#">مدیریت و کارکنان</a></li>
-                    <li><a href="#">ماموریت و چشم انداز</a></li>
-                    <li><a href="#">گواهینامه ها</a></li>
-                    <li><a href="#">افتخارات</a></li>
-                    <li><a href="#">فرصت های شغلی</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="">پرداخت آسان</a></li>
-            <li><a href="">سفارش آسان</a></li>
-            
-            
-        </ul>
+    <div class="off-canvas-item">
+      <a href="#">صفحه اصلی</a>
     </div>
     
  
+    <div class="off-canvas-item has-submenu">
+      <a href="#" class="menu-trigger">
+        <span>محصولات</span>
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <div class="submenu" data-level="1">
+        <div class="submenu-header">
+          <button class="back-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>بازگشت</span>
+          </button>
+          <span class="submenu-title">محصولات</span>
+        </div>
+        <div class="submenu-items">
+          
+        
+          <div class="submenu-item has-submenu">
+            <a href="#" class="menu-trigger">
+              <span>دسته اول</span>
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="submenu" data-level="2">
+              <div class="submenu-header">
+                <button class="back-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>بازگشت</span>
+                </button>
+                <span class="submenu-title">دسته اول</span>
+              </div>
+              <div class="submenu-items">
+                
+                
+                <div class="submenu-item has-submenu">
+                  <a href="#" class="menu-trigger">
+                    <span>زیردسته 1-1</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </a>
+                  <div class="submenu" data-level="3">
+                    <div class="submenu-header">
+                      <button class="back-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span>بازگشت</span>
+                      </button>
+                      <span class="submenu-title">زیردسته 1-1</span>
+                    </div>
+                    <div class="submenu-items">
+                      
+                     
+                      <div class="submenu-item has-submenu">
+                        <a href="#" class="menu-trigger">
+                          <span>محصول 1-1-1</span>
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <div class="submenu" data-level="4">
+                          <div class="submenu-header">
+                            <button class="back-btn">
+                              <i class="fa-solid fa-chevron-right"></i>
+                              <span>بازگشت</span>
+                            </button>
+                            <span class="submenu-title">محصول 1-1-1</span>
+                          </div>
+                          <div class="submenu-items">
+                            
+                           
+                            <div class="submenu-item has-submenu">
+                              <a href="#" class="menu-trigger">
+                                <span>مدل A</span>
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                              <div class="submenu" data-level="5">
+                                <div class="submenu-header">
+                                  <button class="back-btn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>بازگشت</span>
+                                  </button>
+                                  <span class="submenu-title">مدل A</span>
+                                </div>
+                                <div class="submenu-items">
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 1</a>
+                                  </div>
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 2</a>
+                                  </div>
+                                  <div class="submenu-item">
+                                    <a href="#">نسخه 3</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="submenu-item">
+                              <a href="#">مدل B</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="submenu-item">
+                        <a href="#">محصول 1-1-2</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="submenu-item">
+                  <a href="#">زیردسته 1-2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+          <div class="submenu-item has-submenu">
+            <a href="#" class="menu-trigger">
+              <span>دسته دوم</span>
+              <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div class="submenu" data-level="2">
+              <div class="submenu-header">
+                <button class="back-btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>بازگشت</span>
+                </button>
+                <span class="submenu-title">دسته دوم</span>
+              </div>
+              <div class="submenu-items">
+                <div class="submenu-item">
+                  <a href="#">زیردسته 2-1</a>
+                </div>
+                <div class="submenu-item">
+                  <a href="#">زیردسته 2-2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="submenu-item">
+            <a href="#">دسته سوم</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    <div class="off-canvas-item has-submenu">
+      <a href="#" class="menu-trigger">
+        <span>درباره ما</span>
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <div class="submenu" data-level="1">
+        <div class="submenu-header">
+          <button class="back-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>بازگشت</span>
+          </button>
+          <span class="submenu-title">درباره ما</span>
+        </div>
+        <div class="submenu-items">
+          <div class="submenu-item">
+            <a href="#">تاریخچه</a>
+          </div>
+          <div class="submenu-item">
+            <a href="#">اهداف و چشم‌انداز</a>
+          </div>
+          <div class="submenu-item">
+            <a href="#">تیم مدیریت</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    <div class="off-canvas-item">
+      <a href="#">اخبار و رویدادها</a>
+    </div>
+    
+    <div class="off-canvas-item">
+      <a href="#">تماس با ما</a>
+    </div>
+  </div>
 </div>
+
+
+
+<div class="overlay"></div>
 <div class="fix-chat">
     <img src="./images/fix-chat.png" alt="">
 </div>
 
       
     </header>
-    <main>
+    <main class='body-content'>
         <section class="baner-sec">
            <div class="baner-owl owl-carousel owl-theme">
             <div class="baner-item">
@@ -569,10 +649,10 @@
             </div>
            </div>
         </section>
-        <section class="category-sec container-fluid mt-2 my-lg-0">
+        <section class="category-sec container-fluid my-2 my-lg-4">
             <div class="row col-xl-11">
 <div class="cat-owl owl-carousel owl-theme">
-                <div class="p-lg-3 p-2">
+                <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -584,7 +664,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -596,7 +676,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -608,7 +688,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -620,7 +700,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -632,7 +712,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -644,7 +724,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -656,7 +736,7 @@
                         </a>
                     </div>
                 </div>
-                 <div class="p-lg-3 p-2">
+                 <div class=" p-1 p-lg-2 p-xl-3">
                     <div class="cat-item">
                         <a href="">
                             <div class="cat-item-img">
@@ -673,7 +753,7 @@
             </div>
             
         </section>
-        <section class="off-sec container-fluid">
+        <section class="off-sec container-fluid ">
             <div class="row col-xl-11 ps-0">
                 <div class="col-12 ps-lg-5 ps-3">
                     <div class="off-header d-flex justify-content-between pe-0 align-items-center">
@@ -703,18 +783,19 @@
                       </div>
 
                 </div>
-                <div class="col-lg-2  col-4 position-relative pt-4 px-0 px-lg-auto">
+                <div class="col-md-2   col-4 position-relative pt-4 pt-xxl-5 px-0 px-lg-auto">
                     <div class="sale-txt">
                         <div class="mt-3">
-                            <p>کتاب خوانی</p>
+                            <p> کتـاب خـــوانــی</p>
                         <p>با طعم تخفیف !</p>
                         </div>
                         <div>
                             <img src="./images/sale-img.png" alt="" class="">
                         </div>
+                        <a href='' class='see-all-off'>مشاهده همه</a>
                     </div>
                 </div>
-                <div class="col-lg-10 col-8 pt-4 ps-0">
+                <div class="col-md-10  col-8 pt-4 pt-xxl-5 ps-0">
                    <div class="sale-carousel">
                      <div class="sale-owl owl-carousel owl-theme carousel-nav-btn">
                         <div class="p-1">
@@ -857,7 +938,7 @@
 
             </div>
         </section>
-        <section class="container-fluid gallery-tabs px-lg-0 mt-5">
+        <section class="container-fluid gallery-tabs px-lg-0 mt-lg-5 mt-3">
         <div class="row col-xl-11 px-lg-0">
             <div class="tabs-nav my-2">
         <button class="tab-link active" data-tab="tab-1">کتاب های دانشگاهی</button>
@@ -1420,26 +1501,26 @@
             </div>
         </div>
 </section>
-<section class="baners container-fluid px-lg-0 my-lg-5 my-3">
+<section class="baners container-fluid px-lg-0 my-lg-5 mb-4">
 <div class="row col-xl-11 px-lg-0">
-    <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
+    <div class="col-md-4 px-0 px-md-2 mt-3 mt-lg-0">
         <a href="" class="d-flex justify-content-center">
             <img src="./images/baner1.png" alt="" class="img-fluid ">
         </a>
     </div>
-      <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
+      <div class="col-md-4 px-0 px-md-2 mt-3 mt-lg-0">
         <a href="" class="d-flex justify-content-center">
             <img src="./images/baner2.png" alt="" class="img-fluid ">
         </a>
     </div>
-      <div class="col-lg-4 px-lg-0 mt-3 mt-lg-0">
+      <div class="col-md-4 px-0 px-md-2 mt-3 mt-lg-0">
         <a href=""  class="d-flex justify-content-center">
             <img src="./images/baner3.png" alt="" class="img-fluid ">
         </a>
     </div>
 </div>
 </section>
-<section class="most-sale px-lg-0 container-fluid ">
+<section class="most-sale px-lg-0 container-fluid  ">
     <div class="row col-xl-11 px-lg-0">
         <div class="title-sec d-flex align-items-center w-100">
             <div class="d-flex align-items-center ps-3">
@@ -1620,7 +1701,7 @@
                 </div>
     </div>
 </section>
-<section class="books container-fluid px-lg-0 ">
+<section class="books container-fluid px-lg-0 mt-5">
     <div class="row col-xl-11 px-lg-0">
         <div class="col-lg-3 col-6 my-lg-5 my-3 my-lg-0">
             <a href="" class="book-item" >
@@ -1669,9 +1750,18 @@
 </section>
 <section class="baner-two container-fluid px-lg-0">
     <div class="row col-xl-11 px-lg-0">
-    <a href="">
-        <img src="./images/baner-two.png" alt="" class="img-fluid w-100">
+    <div class="owl-carousel owl-theme baner-carousel">
+        <div class="baner-two-item">
+            <a href="">
+        <img src="./images/baner-two.png" alt="" class="img-fluid ">
     </a>
+        </div>
+        <div class="baner-two-item">
+            <a href="">
+        <img src="./images/award-baner.png" alt="" class="img-fluid ">
+    </a>
+        </div>
+    </div>
 
     </div>
 </section>
@@ -2001,6 +2091,9 @@
             </div>
             <div class="d-flex align-items-center line">
                 <div class="title-line"></div>
+            </div>
+             <div class="d-flex align-items-center pe-3">
+                <a href=''> مشاهده همه</a>
             </div>
         </div>
         <div class="suggest-book-list mt-4">
@@ -2410,7 +2503,7 @@
         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="socials d-flex justify-content-between my-5 my-lg-0">
+                        <div class="socials d-flex justify-content-center justify-content-lg-between my-5 my-lg-0">
                             <div class="social-item">
                                 <a href="">
                                     <img src="./images/yube.png" alt="">

@@ -637,3 +637,77 @@ $(document).ready(function() {
             
          
         });
+
+         const isMobile = window.innerWidth <= 968;
+  
+  // تنظیم اسلایدر سایدبار
+  var swiperThumbs = new Swiper(".mySwiper", {
+    direction: isMobile ? 'horizontal' : 'vertical',
+    spaceBetween: 0,
+    slidesPerView: 5,
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    watchSlidesProgress: true,
+    loop: true,
+    loopedSlides: 2, 
+    speed: 4000,
+    autoplay: {
+      delay: 1000,
+     
+    },
+  });
+
+  // تنظیم اسلایدر اصلی
+  var swiperMain = new Swiper(".mySwiper2", {
+    loop: true,
+    loopedSlides: 1,
+    speed: 4000,
+    autoplay: {
+      delay: 1000,
+     
+    },
+    effect: 'coverflow',
+    centeredSlides: true,
+    coverflowEffect: {
+      rotate: -40,
+      stretch: 50,
+      depth: 300,
+      modifier: -0.5,
+    },
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      968: {
+        slidesPerView: 4,
+      }
+    },
+    // رویداد تغییر اسلاید برای به‌روزرسانی توضیحات
+    on: {
+      slideChange: function() {
+        updateDescription(this.realIndex);
+      }
+    }
+  });
+
+  // تابع به‌روزرسانی توضیحات
+  function updateDescription(activeIndex) {
+    const descriptions = document.querySelectorAll('.description-item');
+    
+    descriptions.forEach((desc, index) => {
+      if (index === activeIndex) {
+        desc.classList.add('active');
+      } else {
+        desc.classList.remove('active');
+      }
+    });
+  }
+
+  // نمایش توضیحات اولیه
+  updateDescription(0);

@@ -172,13 +172,16 @@ z-index: 1;
   .search-input input::placeholder{
     font-size: .9em;
   }
-  .search-input img{
+  .search-input button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 6px;
     padding: 6px;
-    border-radius: 10px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+
   }
   .search-res{
     display: none;
@@ -3771,3 +3774,331 @@ padding:25px;
     font-size: 14px;
   }
 }
+
+
+
+.editor-book-carousel{
+    background-color: hsl(196.92deg 60% 87.25%);
+    border-radius: 25px;
+}
+
+
+
+   
+
+    /* کارت توضیحات - سمت چپ */
+    .description-card {
+      
+    }
+
+    .description-item {
+      display: none;
+      animation: fadeIn 0.5s ease;
+      background: white;
+      border-radius: 20px;
+      padding: 20px 15px;
+      width: 250px;
+      min-height: 300px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .description-item.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .description-header {
+      text-align: right;
+      color: #1c3333;
+      margin-bottom: 25px;
+    }
+
+    .description-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 8px;
+      /* line-height: 1.6; */
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+
+/* خط خاکستری (بیس) */
+.description-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #e0e0e0;
+}
+
+/* خط نارنجی متحرک */
+.description-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: orange;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+/* حالت فعال = پر شدن */
+.description-item.active .description-title::before {
+    width: 100%;
+  transform: width .4s ease;
+}
+
+
+    .description-subtitle {
+      font-size: 14px;
+      color: #999;
+      line-height: .5em;
+    }
+
+
+    .description-text {
+      font-size: 13px;
+      line-height: 2;
+      color: #555;
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+    .description-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff9800, #ffc107);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+      transition: all 0.3s ease;
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+    }
+
+    .description-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+    }
+
+    .description-btn::before {
+      content: '+';
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* بخش اسلایدرها */
+    .slider-section {
+      /* display: flex; */
+      /* align-items: center; */
+      /* gap: 60px; */
+      flex: 1;
+    }
+
+    /* استایل سایدبار */
+    .mySwiper {
+      width: 100px;
+      height: 350px;
+    }
+    
+    .mySwiper .swiper-slide {
+      transition: all 0.4s ease;
+      
+      transform: scale(0.8);
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+    }
+    
+   
+    
+    .thumb-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff !important;
+      transition: all 0.3s ease;
+      font-size: 18px;
+      font-weight: bold;
+      opacity: .5;
+    }
+
+    .thumb-box{
+    border-radius: 15px;
+    padding: 10px;
+}
+.thumb-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.thumb-box .ed-img{
+    height: 40px;
+}
+.thumb-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .6em;
+}
+    
+    .swiper-slide-thumb-active .thumb-box {
+      background: #fff;
+      opacity: 1;
+      box-shadow: 0px 0px 10px 3px #0e0e0e36;
+      
+        font-size: .7em;
+    }
+
+    /* استایل کارت اصلی */
+    .mySwiper2 {
+      flex: 1;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+    .mySwiper2 .swiper-slide{
+        /* transform: scale(.8) !important; */
+        opacity: .6;
+        /* transform: scale(.9) !important; */
+      
+    }
+
+    .mySwiper2 .swiper-slide .swiper-card {
+      /* width: 200px; */
+      transition: all 0.4s ease;
+     
+    }
+    .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
+        background-image: none !important;
+        border-radius: 15px;
+    }
+
+    .mySwiper2 .swiper-slide-active {
+    transform: scale(1.2) !important;
+      z-index: 10;
+      opacity: 1;
+      
+    }
+
+    .swiper-card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      height: 100%;
+      opacity: 1;
+
+    }
+     .mySwiper2 .swiper-slide-active .swiper-card{
+    opacity: 1;
+     width: 100%;
+        box-shadow: 0px 0px 10px 3px #0e0e0e36;
+     
+    
+
+    }
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      background-color: hsl(83.08deg 96.3% 89.41%);
+      padding: 5px;
+      border-radius: 8px;
+
+    }
+
+    .img-container img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+
+
+    .buy-btn {
+      width: 100%;
+      margin-top: 15px;
+      padding:10px 15px;
+      border: none;
+   background: linear-gradient(
+    180deg,
+     #1e7fe3 0%,
+      #0d63c6 50%,
+    #0a4fa3 100%  
+  );
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+  
+    
+    @media (max-width:1200px){
+      .main-wrapper {
+        flex-direction: column;
+       
+      }
+      
+      .description-card {
+        width: 100%;
+        max-width: 400px;
+        order: 2;
+      }
+      
+      .slider-section {
+        order: 1;
+        width: 100%;
+      }
+    }
+
+    @media (max-width:968px){
+      .slider-section {
+        flex-direction: column;
+        height: auto;
+      }
+      
+      .mySwiper {
+        width: 100%;
+        height: 80px;
+      }
+      
+      .mySwiper2 {
+        width: 100%;
+      }
+      
+      .description-card {
+        min-height: auto;
+      }
+    }
+
